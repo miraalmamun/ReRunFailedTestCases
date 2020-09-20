@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DeleteItemsSuite]">
+  <listeners>
+    <listener class-name="retryFailedTestCases.MyIAnnotation"/>
+  </listeners>
+  <test thread-count="5" name="DeletedTest(failed)">
+    <classes>
+      <class name="cart.DeleteItemsFromCart">
+        <methods>
+          <include name="deleteOneItems"/>
+          <include name="deleteMinItems"/>
+        </methods>
+      </class> <!-- cart.DeleteItemsFromCart -->
+    </classes>
+  </test> <!-- DeletedTest(failed) -->
+</suite> <!-- Failed suite [DeleteItemsSuite] -->
