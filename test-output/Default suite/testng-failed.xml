@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="retry.RetryFailed">
+      <class name="retry_FinalTests.TestNGExampleTests">
         <methods>
-          <include name="method1"/>
+          <include name="verifyLoginPageText"/>
+          <include name="setup"/>
+          <include name="quitt"/>
         </methods>
-      </class> <!-- retry.RetryFailed -->
+      </class> <!-- retry_FinalTests.TestNGExampleTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,16 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <listeners>
-    <listener class-name="failedTestListener.MyIAnnotationTransformer2"/>
+    <listener class-name="retry_Final.RetryListener"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="login.CreateLogin">
+      <class name="retry_FinalTests.TestNGExampleTests">
         <methods>
-          <include name="login3"/>
-          <include name="login1"/>
+          <include name="verifyLoginPageText"/>
+          <include name="setup"/>
+          <include name="quitt"/>
         </methods>
-      </class> <!-- login.CreateLogin -->
+      </class> <!-- retry_FinalTests.TestNGExampleTests -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
